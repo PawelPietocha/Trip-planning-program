@@ -14,12 +14,10 @@ import java.util.List;
 @Controller
 public class EmpController {
     private List<Weather> list;
-
-
+    private List<Voivodship> list2;
     WeatherDao weatherDao = new WeatherDao();
+
     public EmpController() {
-
-
     }
 
     @RequestMapping("/zapytaniepogody")
@@ -29,40 +27,18 @@ public class EmpController {
 
     @RequestMapping(value="/save", method = RequestMethod.POST)
     public ModelAndView save(@ModelAttribute("weather") Weather weather){
-
-            WeatherToday weatherToday = new WeatherToday();
-            weatherToday.weatherToday(weather.getCity());
-
-
-
-
-
-
+        WeatherToday weatherToday = new WeatherToday();
+        weatherToday.weatherToday(weather.getCity());
         return new ModelAndView("redirect:/viewWeather");
     }
 
- /*   @RequestMapping(value="/delete", method=RequestMethod.POST)
-    public ModelAndView delete(@RequestParam String id){
-        lis   return new ModelAndView("redirect:/viewemp");
-    }
-
-    @RequestMapping(value="/edit", method=RequestMethod.POST)
-    public ModelAndView edit(@RequestParam String id){
-        Employees employees = getEmployeesById(Integer.parseInt(id));
-        return new ModelAndView("empform","command", employees);
-    }
-
-    @RequestMapping(value="/test", method=RequestMethod.POST)
-    public ModelAndView test(){
-        System.out.println("Test");
-        return new ModelAndView("redirect:/viewemp");
-    } */
 
     @RequestMapping("/viewWeatherList")
     public ModelAndView viewWeatherList(){
         list = weatherDao.getWeather();
         return new ModelAndView("viewWeatherList","list", list);
     }
+
     @RequestMapping("/viewWeather")
     public ModelAndView viewWeather() {
         list = weatherDao.getWeather();
@@ -70,7 +46,13 @@ public class EmpController {
             list.remove(0);
         }
         return new ModelAndView("viewWeather", "list", list);
+    }
 
+    @RequestMapping("/TemperaturesInVoivodships")
+    public ModelAndView temperaturesInVoivodships() {
+        Wojewodztwo wojewodztwo = new Wojewodztwo();
+        list2 = wojewodztwo.wojewodztwo();
+return new ModelAndView("TemperaturesInVoivodships", "list2", list2);
     }
     @RequestMapping(value="/BackToChoice", method=RequestMethod.POST)
     public ModelAndView backToChoice(){

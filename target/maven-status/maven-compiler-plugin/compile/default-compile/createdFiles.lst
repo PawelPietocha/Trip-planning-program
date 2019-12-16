@@ -1,5 +1,6 @@
 hibernate\PhoneDao.class
 Weather\HttpService.class
+Weather\Voivodship.class
 mail\SendEmail.class
 database\Main.class
 hibernate\HibernateConfig.class
@@ -11,6 +12,7 @@ Weather\EmpController.class
 Weather\WeatherToday.class
 hibernate\Weather.class
 database\TransactionsSQL.class
+Weather\Wojewodztwo.class
 database\SQLConnection.class
 hibernate\WeatherDao.class
 database\CRUDStatementSQL.class

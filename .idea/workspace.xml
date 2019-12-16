@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46ca0b2d-2c16-4f88-a040-516fafe7e385" name="Default Changelist" comment="" />
+    <list default="true" id="46ca0b2d-2c16-4f88-a040-516fafe7e385" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Weather/Voivodship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Weather/Wojewodztwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/TemperaturesInVoivodships.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/EmpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Weather/EmpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-12-16" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-12-16" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewWeather_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewWeather_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/zapytaniepogody_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/zapytaniepogody_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +79,8 @@
       <list>
         <option value="XSLT Stylesheet" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -101,16 +119,17 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Jakub\IdeaProjects\spring\spring_employees_with_bd\src\main\java\database" />
-      <recent name="C:\Users\Jakub\Desktop\ideaproject cz 2\mywebapp\src\main\webapp\WEB-INF" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jakub\Desktop\ideaproject cz 2\mywebapp\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="scope" />
       <recent name="Weather" />
       <recent name="hibernate" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Jakub\Desktop\ideaproject cz 2\mywebapp\src\main\webapp" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jakub\IdeaProjects\spring\spring_employees_with_bd\src\main\java\database" />
+      <recent name="C:\Users\Jakub\Desktop\ideaproject cz 2\mywebapp\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -144,7 +163,7 @@
       <module name="mywebapp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hibernate.*" />
+          <option name="PATTERN" value="Weather.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,7 +176,7 @@
       <module name="mywebapp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scope.*" />
+          <option name="PATTERN" value="Weather.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -265,7 +284,8 @@
       <workItem from="1574358517012" duration="6516000" />
       <workItem from="1574424383172" duration="4269000" />
       <workItem from="1576332043979" duration="14630000" />
-      <workItem from="1576491866501" duration="973000" />
+      <workItem from="1576491866501" duration="2179000" />
+      <workItem from="1576510073736" duration="7772000" />
     </task>
     <servers />
   </component>
