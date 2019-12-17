@@ -29,6 +29,7 @@ public class HibernateConfig {
                 configuration.setProperties(settings);
 
                 configuration.addAnnotatedClass(Weather.class);
+                configuration.addAnnotatedClass(ProvinceCity.class);
 
 
                 ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();

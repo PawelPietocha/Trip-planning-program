@@ -12,7 +12,7 @@ public class MainHibernate {
         Weather employeeToUpdate = employeesList.get(35);
       //  employeeToUpdate.setSalary(9999);
 
-        employeeDao.updateEmployees(employeeToUpdate);
+        employeeDao.updateObject(employeeToUpdate);
         employeesList.forEach(System.out::println);
 
         PhoneDao phoneDao = new PhoneDao();

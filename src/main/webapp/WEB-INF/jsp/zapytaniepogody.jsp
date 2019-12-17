@@ -1,7 +1,9 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <style><%@include file="/WEB-INF/css/style.css"%></style>
-
+<head>
+    <meta charset="UTF-8">
+</head>
 		<h1>Enter the city name </h1>
        <form:form method="post" action="save">
       	<table >

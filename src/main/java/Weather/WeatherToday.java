@@ -49,7 +49,7 @@ public class WeatherToday {
             Weather weather = new Weather(cityName, temp1, humidity, clouds, pressure, description, new Date());
             System.out.println(weather.toString());
             WeatherDao employeeDao = new WeatherDao();
-            employeeDao.saveWeather(weather);
+            employeeDao.saveObject(weather);
 
 
 

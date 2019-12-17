@@ -1,5 +1,7 @@
 package Weather;
 
+import hibernate.ProvinceCity;
+import hibernate.ProvinceCityDao;
 import hibernate.Weather;
 import hibernate.WeatherDao;
 import org.springframework.stereotype.Controller;
@@ -9,13 +11,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.io.FileNotFoundException;
 import java.util.List;
 
 @Controller
 public class EmpController {
     private List<Weather> list;
     private List<Voivodship> list2;
+    private List<ProvinceCity> list3;
     WeatherDao weatherDao = new WeatherDao();
+    ProvinceCityDao provinceCityDao = new ProvinceCityDao();
 
     public EmpController() {
     }
@@ -25,6 +30,8 @@ public class EmpController {
         return new ModelAndView("zapytaniepogody","command", new Weather());
     }
 
+    @RequestMapping("/spc")
+    public ModelAndView spc() { return new ModelAndView("spc","command", new ProvinceCity());}
     @RequestMapping(value="/save", method = RequestMethod.POST)
     public ModelAndView save(@ModelAttribute("weather") Weather weather){
         WeatherToday weatherToday = new WeatherToday();
@@ -38,6 +45,18 @@ public class EmpController {
         list = weatherDao.getWeather();
         return new ModelAndView("viewWeatherList","list", list);
     }
+    @RequestMapping(value="/searchProvinceCity", method = RequestMethod.POST)
+    public ModelAndView searchProvinceCity(@ModelAttribute("provinceCity") ProvinceCity provinceCity) throws FileNotFoundException {
+        ZJakiegoWojewodztwaJestMiasto zJakiegoWojewodztwaJestMiasto = new ZJakiegoWojewodztwaJestMiasto();
+        zJakiegoWojewodztwaJestMiasto.listamiast(provinceCity.getCity());
+        return new ModelAndView("redirect:/searchlastProvinceCity");
+    }
+
+    @RequestMapping("/vievProvinceCityList")
+    public ModelAndView viewProvinceList() {
+        list3 = provinceCityDao.getProvinceCity();
+        return new ModelAndView("vievProvinceCityList", "list3", list3);
+    }
 
     @RequestMapping("/viewWeather")
     public ModelAndView viewWeather() {
@@ -46,6 +65,14 @@ public class EmpController {
             list.remove(0);
         }
         return new ModelAndView("viewWeather", "list", list);
+    }
+    @RequestMapping("searchlastProvinceCity")
+    public ModelAndView searchlastProvinceCity() {
+        list3 = provinceCityDao.getProvinceCity();
+        for (int i = 1; i <list3.size() ; ) {
+            list3.remove(0);
+        }
+        return new ModelAndView("searchlastProvinceCity","list3", list3);
     }
 
     @RequestMapping("/TemperaturesInVoivodships")
