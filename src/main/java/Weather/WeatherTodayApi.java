@@ -8,7 +8,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.util.Date;
 
-public class WeatherToday {
+public class WeatherTodayApi {
 
     public static void weatherToday(String cityName) {
 

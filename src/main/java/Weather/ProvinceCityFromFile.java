@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ZJakiegoWojewodztwaJestMiasto {
+public class ProvinceCityFromFile {
     public static void listamiast(String cityName) throws FileNotFoundException {
         ArrayList<String> listamiast = new ArrayList<String>();
         Scanner scanner = new Scanner(System.in);

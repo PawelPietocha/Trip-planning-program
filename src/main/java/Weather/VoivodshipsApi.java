@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Wojewodztwo {
+public class VoivodshipsApi {
 
     public List<Voivodship> wojewodztwo() {
         ArrayList<String> listaStolicWojewodztw = new ArrayList<>();
