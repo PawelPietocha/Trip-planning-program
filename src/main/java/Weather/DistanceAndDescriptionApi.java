@@ -1,5 +1,7 @@
 package Weather;
 
+import hibernate.CityDescription;
+import hibernate.CityDescriptionDao;
 import hibernate.Distance;
 import hibernate.DistanceDao;
 import org.json.JSONArray;
@@ -7,7 +9,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 
-public class DistanceApi {
+public class DistanceAndDescriptionApi {
 
     public static void distance(String cityName1, String cityName2) {
         try {
@@ -29,56 +31,43 @@ public class DistanceApi {
 
     }
 
-    public static void odleglosc(String cityName1, int a) {
-        try {
-            String response = new HttpService().connect(Config.APP_URL1 + "Radom" + "|" + cityName1);
-            switch (a) {
-                case 1:
+    public static void distance(String cityName) throws IOException {
 
-                    parseJson2(response,1);
-                    break;
 
-                case 2:
-                    parseJson2(response,2);
-                    break;
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+            String response = new HttpService().connect(Config.APP_URL1 + "Radom" + "|" + cityName);
+            parseJson2(response, cityName);
+
+
     }
 
-    private static void parseJson2(String json, int a) {
+    private static void parseJson2(String json, String cityName) {
 
         JSONObject wikipedia;
-        JSONArray near;
-        String opis;
+        String description;
         double population;
         String homepage;
+
         JSONObject rootObject = new JSONObject(json);
         JSONArray mainObject = rootObject.getJSONArray("stops");
         JSONObject pierwszyObject = mainObject.getJSONObject(1);
 
-        near = pierwszyObject.getJSONArray("nearByCities");
+
         wikipedia = pierwszyObject.getJSONObject("wikipedia");
-        opis = wikipedia.getString("abstract");
+        description = wikipedia.getString("abstract");
         population = wikipedia.getDouble("population");
         homepage = wikipedia.getString("home");
 
+        CityDescription cityDescription = new CityDescription(cityName, homepage, population);
+        CityDescriptionDao cityDescriptionDao = new CityDescriptionDao();
+        cityDescriptionDao.saveObject(cityDescription);
 
-        switch (a) {
-            case 1:
 
-                System.out.println(opis);
+                System.out.println(description);
                 System.out.println("Populacja miasta wynosi " +population);
                 System.out.println("Strona internetowa miasta " +homepage);
-                break;
-            case 2:
-                for (int i = 0; i < near.length(); i++) {
-                    System.out.println(near.get(i));
 
-                }
-                break;
+
         }
     }
-}
+
 

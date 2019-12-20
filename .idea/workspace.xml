@@ -2,57 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46ca0b2d-2c16-4f88-a040-516fafe7e385" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Weather/DistanceApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/Distance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/DistanceDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Distance/checkDistance.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Distance/viewDistance.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Distance/viewDistanceList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/CityDescription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/CityDescriptionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Description/checkDescription.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Description/viewDescription.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Description/viewDescriptionList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/We.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/WeatherToday.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/WeatherTodayApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Wojewodztwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/VoivodshipsApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/ZJakiegoWojewodztwaJestMiasto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/ProvinceCityFromFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/DistanceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/DistanceAndDescriptionApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/HibernateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/MainHibernate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/MainHibernate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/PhoneDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/Phones.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/TemperaturesInVoivodships.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Voivodships/TemperaturesInVoivodships.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchlastProvinceCity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/ProvinceCity/viewProvinceCity.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/spc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/ProvinceCity/checkProvinceCity.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/vievProvinceCityList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/ProvinceCity/viewProvinceCityList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/viewWeather.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Weather/viewWeather.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/viewWeatherList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Weather/viewWeatherList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zapytaniepogody.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Weather/checkWeather.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Weather/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Weather/EmpController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Weather/We.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Weather/WeatherToday.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Wojewodztwo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Weather/ZJakiegoWojewodztwaJestMiasto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/HibernateConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/MainHibernate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/MainHibernate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/PhoneDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/Phones.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-12-16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-12-17" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-12-17" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/TemperaturesInVoivodships_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/TemperaturesInVoivodships_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/searchlastProvinceCity_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/searchlastProvinceCity_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/spc_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/spc_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewWeather_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/viewWeather_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/zapytaniepogody_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/zapytaniepogody_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/DistanceApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/HttpService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/PCity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/ProvinceCityFromFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Voivodship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/VoivodshipsApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/WeatherTodayApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/CRUDStatementSQL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/SQLConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/TransactionsSQL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/Distance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/DistanceDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/HibernateConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/HibernateDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/MainHibernate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/ProvinceCity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/ProvinceCityDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/Weather.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/WeatherDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mail/SendEmail$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mail/SendEmail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scope/MainScope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scope/ScopeExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-singleton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-12-17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/Distance/checkDistance_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/Distance/checkDistance_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/Distance/viewDistanceList_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/Distance/viewDistanceList_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/Distance/viewDistance_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/Distance/viewDistance_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/Weather/checkWeather_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/Weather/checkWeather_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/Weather/viewWeatherList_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/Weather/viewWeatherList_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,8 +118,8 @@
       <list>
         <option value="XSLT Stylesheet" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -153,21 +158,21 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\pawel\Desktop\Wyjazdy\src\main\java\Weather" />
-      <recent name="C:\Users\Jakub\IdeaProjects\spring\spring_employees_with_bd\src\main\java\database" />
-      <recent name="C:\Users\Jakub\Desktop\ideaproject cz 2\mywebapp\src\main\webapp\WEB-INF" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pawel\Desktop\Wyjazdy\src\main\webapp\WEB-INF\jsp\ProvinceCity" />
+      <recent name="C:\Users\pawel\Desktop\Wyjazdy\src\main\webapp\WEB-INF\jsp\Voivodships" />
+      <recent name="C:\Users\pawel\Desktop\Wyjazdy\src\main\webapp\WEB-INF\jsp\Weather" />
+      <recent name="C:\Users\Jakub\Desktop\ideaproject cz 2\mywebapp\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Weather" />
       <recent name="scope" />
       <recent name="hibernate" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pawel\Desktop\Wyjazdy\src\main\webapp\WEB-INF\jsp\ProvinceCity" />
-      <recent name="C:\Users\pawel\Desktop\Wyjazdy\src\main\webapp\WEB-INF\jsp\Voivodships" />
-      <recent name="C:\Users\pawel\Desktop\Wyjazdy\src\main\webapp\WEB-INF\jsp\Weather" />
-      <recent name="C:\Users\Jakub\Desktop\ideaproject cz 2\mywebapp\src\main\webapp" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pawel\Desktop\Wyjazdy\src\main\java\Weather" />
+      <recent name="C:\Users\Jakub\IdeaProjects\spring\spring_employees_with_bd\src\main\java\database" />
+      <recent name="C:\Users\Jakub\Desktop\ideaproject cz 2\mywebapp\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -325,7 +330,10 @@
       <workItem from="1576491866501" duration="2179000" />
       <workItem from="1576510073736" duration="16347000" />
       <workItem from="1576577982839" duration="256000" />
-      <workItem from="1576585559893" duration="11070000" />
+      <workItem from="1576585559893" duration="20803000" />
+      <workItem from="1576694845709" duration="6724000" />
+      <workItem from="1576762058143" duration="658000" />
+      <workItem from="1576844037055" duration="858000" />
     </task>
     <servers />
   </component>

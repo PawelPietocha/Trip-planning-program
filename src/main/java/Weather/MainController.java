@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 
 @Controller
@@ -23,6 +24,11 @@ public class MainController {
 
     private List<Distance> list4;
     DistanceDao distanceDao = new DistanceDao();
+
+    private List<CityDescription> list5;
+    CityDescriptionDao cityDescriptionDao = new CityDescriptionDao();
+
+    private List<String> list6;
 
     public MainController() {
     }
@@ -89,12 +95,6 @@ public ModelAndView temperaturesInVoivodships() {
     @RequestMapping("/checkDistance")
     public ModelAndView checkDistance() { return new ModelAndView("Distance/checkDistance","command", new Distance());}
 
-    @RequestMapping("viewDistanceList")
-    public ModelAndView viewDistanceList() {
-        list4 = distanceDao.getDistance();
-        return new ModelAndView("Distance/viewDistanceList", "list4", list4);
-    }
-
     @RequestMapping("viewDistance")
     public ModelAndView viewDistance() {
         list4= distanceDao.getDistance();
@@ -104,12 +104,49 @@ public ModelAndView temperaturesInVoivodships() {
         return new ModelAndView("Distance/viewDistance", "list4", list4);
 
         }
+
     @RequestMapping(value="/saveDistance", method = RequestMethod.POST)
     public ModelAndView saveDistance(@ModelAttribute("distance") Distance distance)  {
-        DistanceApi distanceApi = new DistanceApi();
+        DistanceAndDescriptionApi distanceApi = new DistanceAndDescriptionApi();
         distanceApi.distance(distance.getCity1(), distance.getCity2());
         return new ModelAndView("redirect:/viewDistance");
     }
+    @RequestMapping("viewDistanceList")
+    public ModelAndView viewDistanceList() {
+        list4 = distanceDao.getDistance();
+        return new ModelAndView("Distance/viewDistanceList", "list4", list4);
+    }
+////////////////////////////// Description
+
+    @RequestMapping("/checkDescription")
+    public ModelAndView checkDescription() { return new ModelAndView("Description/checkDescription","command", new CityDescription());}
+
+    @RequestMapping("/viewDescriptionList")
+    public ModelAndView viewDescriptionList() {
+        list5 = cityDescriptionDao.getCityDescription();
+        return new ModelAndView("Description/viewDescriptionList", "list5", list5);
+    }
+    @RequestMapping("viewDescription")
+    public ModelAndView viewDescription() {
+    list5 =cityDescriptionDao.getCityDescription();
+        for (int i = 1; i <list5.size() ; ) {
+            list5.remove(0);
+        }
+        return new ModelAndView("Description/viewDescription", "list5", list5);
+
+    }
+    @RequestMapping(value="/saveDescription", method = RequestMethod.POST)
+    public ModelAndView saveDescription(@ModelAttribute("cityDescription") CityDescription cityDescription) throws IOException {
+        DistanceAndDescriptionApi distanceApi = new DistanceAndDescriptionApi();
+        distanceApi.distance(cityDescription.getCity());
+
+
+        return new ModelAndView("redirect:/viewDescription");
+    }
+
+
+
+
 
     /////////////////////// Others
     @RequestMapping(value="/BackToChoice", method=RequestMethod.POST)

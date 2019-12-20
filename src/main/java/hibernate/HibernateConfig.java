@@ -31,6 +31,7 @@ public class HibernateConfig {
                 configuration.addAnnotatedClass(Weather.class);
                 configuration.addAnnotatedClass(ProvinceCity.class);
                 configuration.addAnnotatedClass(Distance.class);
+                configuration.addAnnotatedClass(CityDescription.class);
 
 
                 ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
